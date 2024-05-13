@@ -88,17 +88,3 @@ body  {
     transform: scale(1);
   }
 }
-  
-.slider-container {
-  max-width: 100%; /* Ensures the slider doesn't overflow its container */
-  overflow: hidden; /* Hides any overflow beyond the container */
-}
-
-.slider-item {
-  padding: 0 10px; /* Adjust padding between slides */
-}
-
-.slider-image {
-  width: 100%; /* Ensures the images fill the slider width */
-  height: auto; /* Allows images to maintain aspect ratio */
-}

@@ -1,6 +1,11 @@
-"use clint";
-import React from "react";
+"use client"
+import { initFlowbite } from "flowbite";
+import { useEffect } from 'react';
+// import React from "react";
 const Header = () => {
+  useEffect(() => {
+    initFlowbite()
+  }, [])
   return (
     <>
       <nav class="bg-[#033B5F]">

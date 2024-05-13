@@ -1,5 +1,6 @@
 // import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from 'next/script'
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -11,10 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
-      <body>{children}
       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-      {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> */}
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></Script>
+      <body>{children}
+      
       </body>
     </html>
   );

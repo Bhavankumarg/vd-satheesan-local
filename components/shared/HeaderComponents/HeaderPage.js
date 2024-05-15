@@ -1,42 +1,53 @@
-"use client"
+"use client";
 import { initFlowbite } from "flowbite";
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import Link from "next/link";
+import AOS from "aos";
 // import React from "react";
 const Header = () => {
   useEffect(() => {
-    initFlowbite()
-  }, [])
+    initFlowbite();
+    AOS.init({
+      // Initialize AOS with your desired configuration options
+      //   duration: 800, // Duration of the animation
+      //   easing: "ease-in-out", // Easing option
+      once: false, // Whether animation should only happen once
+    });
+  }, []);
   return (
     <>
-      <nav class="bg-[#033B5F]">
+      <nav class="bg-[#033B5F] drop-shadow-lg" data-aos="fade-up">
         <div class="max-w-screen-xl flex lg:flex-wrap items-center justify-between p-0">
-          <div class="lg:flex">
-            <div className="w-1/2">
-            <a href="/" class="lg:flex">
-              <img src="/home_images/vds-main.png" class="p-0 h-32" alt="vds" />
-              <span class="self-center font-bold text-white text-3xl mt-4 flex-none text-start text-center">
-                <h6 className="self-center text-center text-3xl">
-                V D Satheesan
-                </h6>
-                <p class=" text-white font-bold ms-2">For the people</p>
-              </span>
-            </a>
+          <div class="lg:flex justify-between">
+            <div className="w-1/ ">
+              <Link href="/" class="lg:flex">
+                <img
+                  src="/home_images/vds-main.png"
+                  class="p-0 h-32"
+                  alt="vds"
+                />
+                <span class="self-center font-bold text-white text-3xl mt-4 flex-none ">
+                  <h6 className="self-center lg:text-center text-4xl merriweather-bold">
+                    V D Satheesan
+                  </h6>
+                  <p class=" text-white text-[23px] ms-2 merriweather-light">
+                    For the people
+                  </p>
+                </span>
+              </Link>
             </div>
-            
-            <div class="flex lg:grid lg:grid-col  lg:py-5 lg:grid-flow-row">
 
-              <p class="text-white lg:m-5 ms-2">
-                <i>
+            <div class="flex lg:grid lg:grid-col  lg:py-0 lg:grid-flow-row  justify-center items-center lg:w-[50%] ">
+              <p class="text-white lg:m-5 ms-2 merriweather-regular-italic text-[23px]">
                 “People respect us not for our ability to make laws, but because
                 of our ability to undo the injustice done to our people.”
-                </i>
-                 </p>
+              </p>
             </div>
           </div>
 
-          <div class="fixed top-0 right-0 lg:me-14 mt-5">
+          <div class="fixed top-7 right-5  ">
             <button
-              class="px-5 py-2.5 mb-2"
+              class="px-5 py-2.5 mb-2 mt-2 "
               type="button"
               data-drawer-target="drawer-right-example"
               data-drawer-show="drawer-right-example"
@@ -78,89 +89,86 @@ const Header = () => {
           </svg>
           <span class="sr-only">Close menu</span>
         </button>
-        <div className="py-4 h-full">
-
+        <div className="py-4 h-ful merriweather-regular text-xl">
           <ul class="space-y-3 font-medium">
             <li className="border-b">
-              <a
+              <Link
                 href="/"
                 className="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="ms-3">Home</span>
-              </a>
+              </Link>
             </li>
 
             <li className="border-b">
-              <a
-                href="/"
+              <Link
+                href="/my-journey"
                 className="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="ms-3">My Journey</span>
-              </a>
+              </Link>
             </li>
             <li className="border-b">
-              <a
+              <Link
                 href="/sincerely-me"
                 class="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Sincerely, Me
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="border-b">
-              <a
+              <Link
                 href="/my-constituency"
                 class="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   My Constituency
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="border-b">
-              <a
+              <Link
                 href="/in-my-book-shelf"
                 class="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   In My Book Shelf
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="border-b">
-              <a
+              <Link
                 href="/press-releases"
                 class="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Press Releases
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="border-b">
-              <a
+              <Link
                 href="newsletters"
                 class="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Newsletters
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="">
-              <a
+              <Link
                 href="/get-in-touch"
                 className="flex items-center py-5 text-gray-900 rounded-lg text-white  dark:hover:bg-gray-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Get in Touch
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
-
-          
         </div>
       </div>
     </>

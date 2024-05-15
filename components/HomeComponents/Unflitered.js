@@ -9,7 +9,7 @@ const Unflitered = () => {
         <div className="absolute inset-0 bg-[url('/unfilter_images/unfilter.png')] bg-no-repeat bg-cover brightness-50">
          
         </div>
-        <h6 className="text-white p-5 text-4xl text-center relative">
+        <h6 className="text-white p-5 text-5xl text-center relative merriweather-regular">
             Me, Unfiltered
           </h6>
         {/* Twitter timeline container */}

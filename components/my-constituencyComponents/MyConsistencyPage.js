@@ -1,16 +1,17 @@
 import React from "react";
 import { GoDotFill } from "react-icons/go";
+import Image from "next/image";
 const MyConsistencyPage = () => {
   return (
     <>
 
-      <div className="bg-[url('/home_images/about_satheesan_background.png')] p-5">
-        <h3 className="text-[#035C96] text-4xl text-center lg:p-20 mt-20">
+      <div className="bg-[url('/home_images/about_satheesan_background.png')] p-5 merriweather-regular">
+        <h3 className="text-[#035C96] text-5xl text-center lg:p-20 mt-20">
           My Constituency
         </h3>
-        <div className="lg:flex">
+        <div className="lg:flex text-xl">
           <div>
-            <p className="lg:w-9/12 lg:ms-10 ms-2">
+            <p className="lg:w-9/12 lg:ms-10 ms-2 ">
               North Paravur is an area with a rich and vibrant history. Paravur
               gets its name from the old word Parayur, which means “site of the
               ancient tribe of Paravar.” The Paravar were the predominant
@@ -66,7 +67,7 @@ const MyConsistencyPage = () => {
             </div>
           </div>
           <div className="lg:w-dvw lg:me-10 p-0">
-            <img src="/my_constituency/about-paravur.png" />
+            <Image width={472} height={380} src="/my_constituency/about-paravur.png" />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const FooterForm = () =>{
         <>
         
 
-<form class="p-8  bg-[#072D46] w-full">
+<form class="p-8  bg-[#072D46] w-full merriweather-regular">
   <div class="mb-5">
             <h3 className="text-center text-3xl font-medium p-5 text-white">Be My Friend</h3>
             <div className="flex mb-5 justify-center">

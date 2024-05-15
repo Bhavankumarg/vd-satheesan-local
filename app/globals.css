@@ -2,14 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/* *,
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 body  {
         font-family: "Merriweather Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-} */
+}
+
+
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
+/**
 .merriweather-light {
     font-family: "Merriweather", serif;
     font-weight: 300;
@@ -68,7 +122,7 @@ body  {
     font-weight: 900;
     font-style: italic;
   }
-
+**/
 .bounce-in {
   animation: bounce-in 1.4s ease infinite;
 }
@@ -88,3 +142,261 @@ body  {
     transform: scale(1);
   }
 }
+
+
+
+/* 100vh */
+/* 
+:root {
+  --ratio: 1.5;
+} 
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, Times, Times New Roman, sans-serif;
+  line-height: var(--ratio);
+}
+
+h1 {
+  font-size: clamp(1rem, 1rem + 3vw, 3rem);
+  line-height: calc(2/var(--ratio));
+}
+h2 {
+  font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+}
+
+a {
+  color: black;
+  text-decoration-thickness: .5em;
+  text-decoration-color: deeppink;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.25em;
+}
+
+article {
+  /*   'scroll-snap-type: y mandatory;' It means the section will snap to the top of the container (viewport) every time the user finishes scrolling. If the content of the section overflows the viewport, the user will never be able to access a part of the content. In that case you might want to use 'proximity' in stead of 'mandatory' in scroll-snap-type. In that case, the slideshow effect will be less aparent. */
+  /* scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow: auto;
+}
+
+article > section {
+  scroll-snap-align: start;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+section > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section > :first-child:not(.content) {
+  margin-top: 0;
+}
+
+section > :last-child:not(.content) {
+  margin-bottom: 0;
+}
+
+section > .content {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section > .content {
+  --space: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section > .content > * {
+  margin-top: 0;
+  margin-bottom: 0;
+} 
+
+section > .content > * + * {
+  margin-top: var(--space);
+}
+
+section > .content .intro {
+font-size: clamp(1em, 1rem + 1.2vw, 1.1rem);
+}
+
+section .header,
+section .footer {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+section:nth-of-type(even) {
+  background-color: black;
+  color: white;
+}
+section:nth-of-type(odd) {
+  background-color: white;
+  color: black;
+}
+
+
+
+body[data-js="true"] section > .content {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out 0.1s;
+}
+body[data-js="true"] section .content[data-visible=true] {
+  opacity: 1;
+} */
+/* end vh */
+
+
+
+
+
+
+.oj-nav-item {
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: -6px;
+  padding-bottom: 9px;
+  /* border-right: 1px solid #ffffff; */
+}
+.oj-nav-item::before {
+  content: '|||||||';
+  color: #ffffff;
+  position: relative;
+  bottom:-70%;
+  left: 13%;
+  letter-spacing: 6px;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+}
+/* carousel */
+/* * {
+	box-sizing: border-box;
+}
+
+.gallery {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.cards {
+	position: absolute;
+	width: 14rem;
+	height: 18rem;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cards li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 14rem;
+	height: 18rem;
+	text-align: center;
+	line-height: 18rem;
+	font-size: 2rem;
+	font-family: sans-serif;
+	background-color: #9d7cce;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0.8rem;
+}
+
+.actions {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+button {
+  display:inline-block;
+  outline: none;
+  border: none;
+  padding: 8px 14px;
+  background: #414141;
+  background-image: -webkit-linear-gradient(top, #575757, #414141);
+  background-image: -moz-linear-gradient(top, #575757, #414141);
+  background-image: -ms-linear-gradient(top, #575757, #414141);
+  background-image: -o-linear-gradient(top, #575757, #414141);
+  background-image: linear-gradient(to bottom, #575757, #414141);
+  text-shadow: 0px 1px 0px #414141;
+  -webkit-box-shadow: 0px 1px 0px 414141;
+  -moz-box-shadow: 0px 1px 0px 414141;
+  box-shadow: 0px 1px 0px 414141;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 auto 10px;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  padding: 12px 25px;
+  font-family: "Signika Negative", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+button:hover {
+  background: #57a818;
+  background-image: -webkit-linear-gradient(top, #57a818, #4d9916);
+  background-image: -moz-linear-gradient(top, #57a818, #4d9916);
+  background-image: -ms-linear-gradient(top, #57a818, #4d9916);
+  background-image: -o-linear-gradient(top, #57a818, #4d9916);
+  background-image: linear-gradient(to bottom, #57a818, #4d9916);
+  text-shadow: 0px 1px 0px #32610e;
+  -webkit-box-shadow: 0px 1px 0px fefefe;
+  -moz-box-shadow: 0px 1px 0px fefefe;
+  box-shadow: 0px 1px 0px fefefe;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+a {
+  color: #88ce02;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.drag-proxy {
+  visibility: hidden;
+  position: absolute;
+} */
+/* carousel end */
+  
+  

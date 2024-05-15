@@ -8,13 +8,13 @@ const GettingCandid = () => {
       <div className=" bg-[url('/home_images/about_satheesan_background.png')]">
       
       <div>
-      <h6 className="text-4xl text-[#035C96] text-center p-5">
+      <h3 className="text-5xl text-[#035C96] text-center p-5 merriweather-regular">
           Getting Candid
-        </h6>
-        <p className="text-center font-bold">
+        </h3>
+        <h6 className="text-center text-2xl font-bold merriweather-bold text">
           ‘Dialogue with VDS’ is a series of weekly in-depth interviews with
           experts from various fields
-        </p>
+        </h6>
       </div>
       
       <div className="p-10 flex">

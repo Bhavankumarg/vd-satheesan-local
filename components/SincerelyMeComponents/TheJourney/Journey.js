@@ -3,9 +3,9 @@ import React from "react";
 const Journey = () => {
   return (
     <>
-    <div className="bg-[#EFEFEF] lg:p-5 lg:flex">
+    <div className="bg-[#EFEFEF] lg:p-5 lg:flex merriweather-regular">
         {/* Left Side Content Start */}
-        <div className="border-r-2 border-slate-500">
+        <div className="border-r-2 border-slate-500 text-xl">
           <img
             className=" flex justify-center"
             src="/sincere_images/quote-up.svg"
@@ -47,13 +47,13 @@ const Journey = () => {
 
         {/* Left Side Content End */}
 
-        <div className="lg:flex-1 w-dvw">
+        <div className="lg:flex-1 w-dvw ">
           <h3 className="text-5xl p-4">
             The journey that made me who I am today
           </h3>
           <h6 className="text-2xl p-4">A brief history of my life</h6>
 
-          <div className="lg:flex w-full">
+          <div className="lg:flex w-full text-xl">
             <p className="p-4 lg:w-4/6">
               <span className="font-bold">Nettoor:</span> I was born on May 31,
               1964 to my parents, K Damodara Menon and Smt. V Vilasini Amma in
@@ -66,7 +66,7 @@ const Journey = () => {
               Master’s in Social Work (MSW) from Rajagiri College of Social
               Sciences.
             </p>
-            <div className="border-b-8 border-[#525252] lg:flex ">
+            <div className="border-b-8 border-[#525252] lg:flex">
               <div className="bg-[#818181] text-white p-5 W-11">
                 <p className="lg:w-52">
                   With my wife, Lakshmipriya and my daughter, Unnimaya, my
@@ -78,7 +78,7 @@ const Journey = () => {
               </div>
             </div>
           </div>
-          <div className="lg:flex p-3 border-4 mt-5 border-gray-500 lg:ms-4">
+          <div className="lg:flex p-3 border-4 mt-5 border-gray-500 lg:ms-4 text-xl">
             <img src="/sincere_images/thiruvanadhapuram-vds-speech.png" />
             <div className="lg:p-5 p-2">
               <p>
@@ -95,7 +95,7 @@ const Journey = () => {
 
           {/* Work So Far Start */}
           <h3 className="text-4xl ms-4 mt-8">My Work So Far</h3>
-          <div className="lg:flex p-4 gap-5">
+          <div className="lg:flex p-4 gap-2 text-xl">
             <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12">
               As a politician, I have always been passionate about serving the
               people, and I have been fortunate to hold various positions that
@@ -122,7 +122,7 @@ const Journey = () => {
 
           {/* My Interests Start */}
           <h3 className="text-4xl ms-4 mt-5">My Interests</h3>
-          <p className="p-4 lg:w-9/12">
+          <p className="p-4 lg:w-9/12 text-xl">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
             first to blossom, and as I grew older, my curiosity was piqued by
@@ -137,7 +137,7 @@ const Journey = () => {
           </p>
           <img className="w-full" src="sincere_images/bg_gray.svg" />
           <div className="relative">
-            <p className="bg-[#173A5B] lg:ms-4 text-white p-9">
+            <p className="bg-[#173A5B] lg:ms-4 text-white p-9 text-xl">
               In addition to my work in politics, I have also served as
               president of various trade unions, including:
             </p>
@@ -146,7 +146,7 @@ const Journey = () => {
               src="sincere_images/vds_casual.png"
             />
           </div>
-          <div className="lg:flex p-3 border-b-2 ms-4 border-black">
+          <div className="lg:flex p-3 border-b-2 ms-4 border-black text-xl">
             <h6>
               <ul className="list-disc p-4">
                 <li>Cochin Refineries Employees Association</li>
@@ -194,7 +194,7 @@ const Journey = () => {
 
           <div className="lg:ms-4">
             <div className="lg:border-4 border-[#173A5B] mx-auto m-0 ">
-              <div className="relative bg-[#173A5B]">
+              <div className="relative bg-[#173A5B] text-xl">
                 <p className=" text-white lg:p-24 p-5 lg:w-9/12">
                   My passion for serving the people as a politician has been
                   unwavering for the last 20 years. Throughout this time, I have
@@ -207,7 +207,7 @@ const Journey = () => {
                   src="sincere_images/award_and_record-.png"
                 />
               </div>
-              <div className="lg:flex lg:p-3 lg:ms-10 ">
+              <div className="lg:flex lg:p-3 lg:ms-10 text-xl">
                 <h6>
                   <ul className="list-disc lg:p-4 ms-8">
                     <li> AA Rahim Memorial Award for Best Parliamentarian</li>

@@ -5,7 +5,7 @@ import PublicEye from "./PublicEye";
 import HomeBanner from "./HomeBanner";
 import GettingCandid from "./ GettingCandid/ GettingCandid";
 import Unflitered from "./Unflitered";
-import CatchupSlider from "./CatchUpWithMe/CatchupSlider";
+// import CatchupSlider from "./CatchUpWithMe/CatchupSlider";
 
 const page = () => {
   return (

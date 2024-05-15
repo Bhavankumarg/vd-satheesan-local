@@ -4,11 +4,11 @@ const InMyBookShelfPage = () => {
   return (
     <>
       <div>
-        <h3 className="text-4xl text-[#035C96] text-center p-10">
+        <h3 className="text-5xl text-[#035C96] text-center p-10 merriweather-regular">
           In My Book Shelf
         </h3>
         <div className="container mx-auto lg:px-5">
-        <div className="p-5">
+        <div className="p-5 merriweather-regular text-xl">
           <p>
             Growing up, my love for reading was deeply ingrained in me by my
             mother, who used to tell me stories from the puranas. As I grew
@@ -18,7 +18,7 @@ const InMyBookShelfPage = () => {
             history.
           </p>
         </div>
-        <div className="p-5">
+        <div className="p-5 merriweather-regular text-xl">
           <p>
             Books taught me that life’s challenges are transient and continues
             to in me the courage and confidence to keep moving forward, no
@@ -29,7 +29,7 @@ const InMyBookShelfPage = () => {
           </p>
         </div>
 
-        <div className="p-5">
+        <div className="p-5 merriweather-regular text-xl">
           <p>
             From Kumaranasan to Orhan Pamuk, my taste in literature varies
             widely, and I make sure to make time in my day for reading, no
@@ -39,7 +39,7 @@ const InMyBookShelfPage = () => {
         </div>
       </div>
       <div>
-        <h3 className="text-4xl text-[#035C96] text-center p-10">
+        <h3 className="text-5xl merriweather-regular text-[#035C96] text-center p-10">
           My Book Recommendations
         </h3>
       </div>
